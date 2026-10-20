@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nishant Shetty — Computer Science Student</title>
+<meta name="description" content="Portfolio of Nishant Shetty, a Computer Science student at NMIT Bangalore. Python, Java, C and C++.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#000;--ink:#F5F5F5;--muted:#8F8F8F;--line:#242424;--panel:#0D0D0D;--accent:#7C93FF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#FAFAFA;--ink:#111;--muted:#5E5E5E;--line:#DCDCDC;--panel:#EFEFEF;--accent:#3B54D9;color-scheme:light}}
+:root[data-theme="light"]{--bg:#FAFAFA;--ink:#111;--muted:#5E5E5E;--line:#DCDCDC;--panel:#EFEFEF;--accent:#3B54D9;color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 'Bricolage Grotesque',system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;z-index:20}
+.skip:focus{left:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600}
+header.bar a{text-decoration:none}
+header.bar nav{display:flex;gap:22px;flex-wrap:wrap}
+header.bar nav a{color:var(--muted)}
+header.bar nav a:hover{color:var(--ink)}
+h1{margin:34px 0 0;font-weight:800;text-transform:uppercase;font-size:clamp(2.4rem,12.6vw,10.4rem);line-height:.9;letter-spacing:-.05em;overflow-wrap:anywhere}
+.photo{margin:34px 0 0;aspect-ratio:16/10;background:var(--panel);border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;text-align:center;color:var(--muted);overflow:hidden}
+.photo b{display:block;font-size:clamp(3rem,12vw,7rem);letter-spacing:-.05em;color:var(--accent);line-height:1}
+.photo img{width:100%;height:100%;object-fit:cover}
+.role{margin:22px 0 0;font-size:1.2rem;font-weight:600}
+.role span{display:block;color:var(--muted);font-weight:400}
+section{padding:72px 0 0}
+h2{margin:0 0 22px;font-weight:800;font-size:clamp(2rem,6vw,4rem);letter-spacing:-.035em;line-height:1.02}
+.lead{max-width:60ch;margin:0 0 30px;font-size:1.2rem;color:var(--muted)}
+ol.work,ul.rows{list-style:none;margin:0;padding:0}
+ol.work li{display:grid;grid-template-columns:3rem 1fr;gap:6px 12px;padding:22px 0;border-top:1px solid var(--line)}
+ol.work li::before{counter-increment:w;content:counter(w);color:var(--muted)}
+ol.work{counter-reset:w}
+ol.work strong{font-size:1.5rem;letter-spacing:-.02em}
+ol.work p{grid-column:2;margin:0;color:var(--muted)}
+.note{margin:18px 0 0;color:var(--muted)}
+.ticker{overflow:hidden;margin-top:72px;border-block:1px solid var(--line);padding:16px 0;white-space:nowrap}
+.ticker div{display:inline-block;padding-left:100%;animation:tick 26s linear infinite;font-weight:800;font-size:clamp(1.3rem,4vw,2.2rem);letter-spacing:-.02em}
+@keyframes tick{to{transform:translateX(-100%)}}
+ul.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-top:1px solid var(--line);font-weight:800;font-size:clamp(1.5rem,4.5vw,2.6rem);letter-spacing:-.03em}
+ul.rows li span{font-weight:400;font-size:1rem;letter-spacing:0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.stats div{padding:22px 0;border-top:1px solid var(--line)}
+.stats b{display:block;font-weight:800;font-size:clamp(3rem,9vw,5.6rem);line-height:1;letter-spacing:-.05em}
+.stats span{color:var(--muted)}
+.stats .now b{color:var(--accent)}
+.contact a.big{display:block;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:800;font-size:clamp(1.3rem,4.5vw,2.8rem);letter-spacing:-.03em;text-decoration:none;overflow-wrap:anywhere}
+.contact a.big:hover{color:var(--accent)}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:60px 0 40px;color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none;padding-left:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap" id="top">
+<header class="bar"><a href="#top">Nishant Shetty</a>
+<nav aria-label="Sections"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#cgpa">CGPA</a><a href="#contact">Contact</a></nav></header>
+
+<main id="main">
+<h1>NishantShetty</h1>
+
+<!-- PHOTO 1: replace this figure's contents with <img src="..." alt="Nishant Shetty"> -->
+<figure class="photo" style="margin-inline:0" aria-label="Photo placeholder"><div><b>NS</b>Your photo goes here</div></figure>
+
+<p class="role">Computer Science student<span>NMIT Bangalore, 2025 – 2029</span></p>
+
+<section id="about">
+<h2>I love to build things</h2>
+<p class="lead">I am a first-year Computer Science engineering student at NMIT, Bangalore. I am from Hubli, my family’s native place is Udupi, and I now study in Bangalore. I write code in Python, Java, C and C++, I enjoy playing games, and I like building things mechanically with my hands. I lead and work with teams.</p>
+<!-- PHOTO 2 -->
+<figure class="photo" style="margin-inline:0;aspect-ratio:4/5;max-width:420px" aria-label="Second photo placeholder"><div><b>N</b>Second photo</div></figure>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+<ol class="work">
+<li><strong>Project one</strong><p>Add a short line about what you built and the tools you used.</p></li>
+<li><strong>Project two</strong><p>Add a short line about what you built and the tools you used.</p></li>
+<li><strong>Project three</strong><p>Add a short line about what you built and the tools you used.</p></li>
+</ol>
+<p class="note">These are placeholders. Send me your real projects and I will replace them.</p>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>Python &nbsp;·&nbsp; Java &nbsp;·&nbsp; C &nbsp;·&nbsp; C++ &nbsp;·&nbsp; Leadership &nbsp;·&nbsp; Teamwork &nbsp;·&nbsp; Gaming &nbsp;·&nbsp; Building things &nbsp;·&nbsp; Python &nbsp;·&nbsp; Java &nbsp;·&nbsp; C &nbsp;·&nbsp; C++ &nbsp;·&nbsp; Leadership &nbsp;·&nbsp; Teamwork</div></div>
+
+<section id="skills">
+<h2>What I work with</h2>
+<ul class="rows">
+<li>Python <span>Intermediate</span></li>
+<li>Java <span>Intermediate</span></li>
+<li>C <span>Intermediate</span></li>
+<li>C++ <span>Intermediate</span></li>
+</ul>
+</section>
+
+<section id="cgpa">
+<h2>CGPA by semester</h2>
+<div class="stats">
+<div><b>8.41</b><span>Semester 1</span></div>
+<div><b>8.64</b><span>Semester 2</span></div>
+<div class="now"><b>8.54</b><span>Current CGPA</span></div>
+</div>
+</section>
+
+<section id="languages">
+<h2>Languages I speak</h2>
+<ul class="rows">
+<li>English <span>Good</span></li>
+<li>Kannada <span>Good</span></li>
+<li>Hindi <span>Good</span></li>
+</ul>
+</section>
+
+<section id="strengths">
+<h2>What I am best at</h2>
+<ul class="rows">
+<li>Leadership <span>Setting direction and guiding a team</span></li>
+<li>Teamwork <span>Sharing the load and working together</span></li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk</h2>
+<a class="big" href="mailto:nishantshetty666@gmail.com">nishantshetty666@gmail.com</a>
+</section>
+</main>
+
+<footer><span>© 2026 Nishant Shetty</span><a href="#top">Back to top ↑</a></footer>
+</div>
+</body>
+</html>
